@@ -1,0 +1,61 @@
+nav ul { display: flex; gap: 12px; list-style: none; padding: 0; }
+nav a { text-decoration: none; padding: 6px 10px; border-radius: 6px; }
+nav a.active { background: #efefef; }
+button { padding: 6px 12px; border-radius: 6px; border: 1px solid #ccc; cursor: pointer; }
+form { max-width: 640px; margin: 16px auto; padding: 16px; border: 1px solid #e5e5e5; border-radius: 8px; }
+.control-row { display: flex; gap: 12px; }
+.control { flex: 1; display: flex; flex-direction: column; gap: 6px; margin-bottom: 12px; }
+.error { color: #b00020; }
+ul { padding-left: 18px; }
+
+/* Layout helpers */
+main { max-width: 1100px; margin: 0 auto; padding: 16px; text-align: left; }
+h2 { margin: 16px 0 12px; }
+
+/* Product list grid */
+.product-list { list-style: none; padding: 0; margin: 12px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+.product-list li { background: #ffffff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.04); }
+.product-list h2 { margin: 0 0 6px; font-size: 1.1rem; }
+.product-list h3 { margin: 4px 0; font-weight: 500; color: #4b5563; }
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
