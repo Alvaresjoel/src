@@ -16,8 +16,7 @@ const router = createBrowserRouter([
   children:[
       {index:true,element:<Home/>},
       {path:'login',element:<LoginPage/>},
-      {path:'products',element:<Products/>},
-      {path:'add-product',element:(<RequireAuth><AddProductPage/></RequireAuth>)}
+      {path:'add-product',element:<AddProductPage/>,loader:RequireAuth},
   ] 
 }
 
